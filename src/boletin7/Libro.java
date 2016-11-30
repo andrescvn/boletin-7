@@ -48,13 +48,13 @@ public class Libro {
     }
     public void prestamo(){
         if(exemplares>0)
-        prestados=prestados +1;
+        prestados=prestados++;
         else
             System.out.println("error");
     }
     public void devolucion(){
         if (prestados>0)
-            prestados=prestados -1;
+            prestados=prestados--;
         else
             System.out.println("error");
     }
